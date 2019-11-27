@@ -1,0 +1,927 @@
+/*Etiquetas*/
+body{
+    background:#fff;
+    color: #4F4F4F;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 65%;
+    padding: 2em 2em 4em;
+	text-align:center;
+}
+
+header{
+	font-weight: bolder;
+    text-decoration:none;
+    text-transform:capitalize;
+	
+	position: static;
+	
+	height:auto;
+	width:100%;
+	
+	display:inline-block;
+	background:#CACACA;
+
+	border-radius: 10px 10px 10px 10px;
+}
+ol{
+	width:100%;
+	list-style-type:none;
+	display:inline-block;
+}
+ol li{
+	width:33%;
+	float:left;
+}
+main{
+	text-align:center;
+	margin-left:0%;
+}
+
+article{
+	text-align:center;
+	font-size:0.7em;
+	
+	border-color: #A08940;
+	border-style: groove;
+	border-radius:20px 0px 20px 0px;
+	
+	width:20%;
+	min-width:220px;
+	height:320px;
+	
+	position:relative;
+	float:left;
+	margin:1.5em 0.5%;
+	display:block;
+	padding:1px;
+}
+article img{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	padding:0;
+}
+article a{
+	margin:1em;
+	
+	padding: 5px;
+	border-radius:10px 0px 10px 0px;
+	background-color:#A08940;
+	
+	text-decoration-color:#919191; 
+	text-decoration:none;
+}
+article p{
+	text-align:left;
+	text-indent:1em;
+	width:90%;
+}
+
+footer{
+	background-color: #CACACA;
+	border-radius: 20px 20px 20px 20px;
+	height:auto;
+	width:100%;
+	margin-top:20px;
+	float:right;
+}
+footer a{
+
+	text-decoration: none;
+	color: #A08940;
+}
+legend {
+    font-weight:bold;
+   	background:radial-gradient(#F8E177, #A08940);
+    color:#4F4F4F;
+    padding: 1em;
+    font-size:90%;
+    text-align:left;
+  }
+
+  h3{
+  	width: 100%;
+  	display: inline-block;
+  }
+
+/*clases*/
+
+/*FORMULARIO_ALBUM_y_REGISTRO*/
+.album-form {
+    font-size: 14px;
+	float:bottom;
+	z-index: 3;
+	background: #FFFFFF;
+    width:420px;
+	position:relative;
+	margin: 0 auto;
+	margin-top:2.5%;
+	padding: 0.5em;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.albumForm picture{
+	size: 20em;
+}
+.albumForm legend{
+	font-weight:bold;
+   	background:radial-gradient(#F8E177, #A08940);
+    color:#4F4F4F;
+    padding: 1em;
+    font-size:90%;
+    text-align:left;
+}
+.labelForm{
+    font-weight: bold;
+    line-height: normal;
+    text-align: right;
+    margin-right: 10px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 150px;
+    padding:1em;
+}
+.formInput{
+    min-width: 200px;
+	background: #CACACA;
+	color:#A08940;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 1em;
+	box-sizing: border-box;
+	float:left;
+    display:block;
+}
+.formInputColor{
+    height: 45px;
+    min-width: 200px;
+	border: 0;
+	margin: 0 0 15px;
+	box-sizing: border-box;
+	float:left;
+    display:block;
+}
+
+.bus-form button:hover,.form button:active,.form button:focus {
+	background: #43A047;
+}
+.formSubmit{
+    font-weight:bold;
+	background:radial-gradient(#F8E177, #A08940);
+	margin:0 auto;
+	margin-top:2%;
+	color:#4F4F4F;
+    border:0;
+    min-width: 400px;
+    padding: 1em;
+}
+.formSubmit:hover{
+	background:radial-gradient(#A08940, #F8E177);
+}
+
+
+
+
+
+/*iniciar sesion*/
+.boton-ini{
+
+	background:radial-gradient(#F8E177, #A08940);
+    
+	float:left;
+	padding: .3em;
+	width:80px;
+	min-height: 50px;
+	
+	border-color: #A889BB;
+	color: #4F4F4F;
+	text-decoration:none;
+	font-size:.9em;
+}
+.boton-ini:hover{
+	background:radial-gradient(#A08940,#F8E177);
+}
+
+.ini-form {
+	display:none;
+	float:bottom;
+	z-index: 3;
+	background: #FFFFFF;
+	max-width: 360px;
+	position:relative;
+	margin: 0 auto;
+	padding: 0.8em;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.ini-form input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #C0C0C0;
+	color:#A08940;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 0.4em;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+::-webkit-input-placeholder {
+	color: #4CAF50;
+}
+.ini-form button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: radial-gradient(#F8E177, #A08940);
+	width: 100%;
+	border: 0;
+	padding: 10px;
+	color: #4F4F4F;
+	font-size: 14px;
+	cursor: pointer;
+}
+.ini-form button:hover,.form button:active,.form button:focus {
+	background:radial-gradient(#A08940,#F8E177);
+}
+.ini-form .mensaje {
+	margin: 15px 0 0;
+	color: #4F4F4F;
+	font-size: 12px;
+}
+.ini-form .mensaje a {
+	color: #393939;
+	text-decoration: none;
+}
+.ini-form .mensaje a:hover {
+	color: #A08940;
+	text-decoration: none;
+}
+.boton-ini:hover .ini-form{
+	display:block;
+}
+.boton-ini:hover {
+	display:block;
+	width:200px;
+	padding: 0.4em 0em 0.4em 0em;
+	z-index:5;
+    background:radial-gradient(#A08940,#F8E177);
+}
+
+/*buscador*/
+.bus-form {
+	float:bottom;
+	z-index: 3;
+	background: #FFFFFF;
+	max-width: 360px;
+	position:relative;
+	margin: 0 auto;
+	margin-top:2.5%;
+	padding: 0.3em;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.bus-form input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #C0C0C0;
+	color:#A08940;
+	width: 66%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 1em;
+	box-sizing: border-box;
+	font-size: 14px;
+	float:left;
+	margin-top:1px;
+}
+.bus-form button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: radial-gradient(#F8E177, #A08940);
+	width: 30%;
+	border: 0;
+	padding: 15px 5px;
+	color: #4F4F4F;
+	font-size: 14px;
+	cursor: pointer;
+}
+.bus-form button:hover,.form button:active,.form button:focus {
+	background: radial-gradient(#A08940, #F8E177);
+}
+/*buscador avanzado*/
+.bus-form-a {
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	float:bottom;
+	z-index: 3;
+	background: #FFFFFF;
+	max-width: 500px;
+	height:auto;
+	position:relative;
+	margin: 0 auto;
+	margin-top:2.5%;
+	padding: 0.3em;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.bus-form-a fieldset {
+	width:100%;
+	border:0px;
+}
+.bus-form-a label {
+    line-height: normal;
+	text-align:left;
+    position: relative;
+    display: block;
+    float: left;
+    padding:0.8em;
+}
+
+.bus-form-a input {
+	outline: 0;
+	background: #CACACA;
+	color:#A08940;
+	border: 0;
+	margin: 0 15px 0 5px;
+	padding: 1em;
+	box-sizing: border-box;
+	font-size: 14px;
+	float:left;
+	margin-top:1px;
+}
+.bus-form-a button {
+	text-transform: uppercase;
+	outline: 0;
+	background: radial-gradient(#F8E177, #A08940);
+	width: 30%;
+	border: 0;
+	padding: 15px 5px;
+	color: #4F4F4F;
+	font-size: 14px;
+	cursor: pointer;
+}
+.bus-form-a button:hover,.form button:active,.form button:focus {
+	background: radial-gradient(#A08940,#F8E177);
+}
+/*Confirmar*/
+.confirmar-form{
+	height:100%;
+	padding:20px;
+	
+	margin:0 auto;
+}
+
+/*Confirmar*/
+.detalle{
+	font-size:2em;
+	text-align:center;
+	
+	width:100%;
+	height:auto;
+}
+.detalle figure img{
+	width:60%;
+}
+.detalle p{
+	text-align:center;
+}
+
+
+
+
+/*resto*/
+.logo{ 
+   position:absolute;
+   width:20%;
+   float:left;
+}
+
+
+.boton-menu2{
+    
+    background:radial-gradient(#F8E177, #A08940);
+    
+	float:left;
+	padding: .3em;
+	width:80px;
+	min-height: 50px;
+	
+	border-color: #A889BB;
+	color: #4F4F4F;
+	text-decoration:none;
+	font-size:.9em;
+
+}
+.boton-menu2:hover{
+     background:radial-gradient(#A08940,#F8E177);
+}
+.li2{
+	width:100px;
+	margin:1% 1% 1% 1%;
+}
+.li-logo{
+	width:110px;
+	margin:3% 0% 0% 225px;
+
+   vertical-align: middle;
+}
+
+
+/*ids*/
+#logo-U{
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-left:-20px;
+	position:relative;
+	float:left;
+    border-top-color:#A08940;
+    border-left-color:black;
+    border-right-color:black;
+    border-bottom-color:#A08940;
+    border-width:10px;
+    border-style: solid;
+    animation: giroLogo 20s linear infinite;
+}
+
+
+/*animaciones*/
+@keyframes giroLogo{
+    from{ transform: rotate(0deg)}
+    to{transform:rotate(360deg)}
+}/*Etiquetas*/
+body{
+    background:#fff;
+    color: #4F4F4F;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 65%;
+    padding: 2em 2em 4em;
+	text-align:center;
+}
+
+header{
+	font-weight: bolder;
+    text-decoration:none;
+    text-transform:capitalize;
+	
+	position: static;
+	
+	height:auto;
+	width:100%;
+	
+	display:inline-block;
+	background:#CACACA;
+
+	border-radius: 10px 10px 10px 10px;
+}
+ol{
+	width:100%;
+	list-style-type:none;
+	display:inline-block;
+}
+ol li{
+	width:33%;
+	float:left;
+}
+main{
+	text-align:center;
+	margin-left:0%;
+	margin: auto;
+}
+section{
+	text-align: center;
+	margin: auto;
+}
+article{
+	text-align:center;
+	font-size:0.7em;
+	
+	border-color: #A08940;
+	border-style: groove;
+	border-radius:20px 0px 20px 0px;
+	
+	width:20%;
+	min-width:220px;
+	height:320px;
+	
+	position:relative;
+	float:left;
+	margin:auto;
+	flex-grow: 3;
+	display:block;
+	padding:1px;
+}
+article img{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	padding:0;
+}
+article a{
+	margin:1em;
+	
+	padding: 5px;
+	border-radius:10px 0px 10px 0px;
+	background-color:#A08940;
+	
+	text-decoration-color:#919191; 
+	text-decoration:none;
+}
+article p{
+	text-align:left;
+	text-indent:1em;
+	width:90%;
+}
+
+footer{
+	background-color: #CACACA;
+	border-radius: 20px 20px 20px 20px;
+	height:auto;
+	width:100%;
+	margin-top:20px;
+	float:right;
+}
+footer a{
+
+	text-decoration: none;
+	color: #A08940;
+}
+legend {
+    font-weight:bold;
+   	background:radial-gradient(#F8E177, #A08940);
+    color:#4F4F4F;
+    padding: 1em;
+    font-size:90%;
+    text-align:left;
+  }
+/*clases*/
+
+/*FORMULARIO_ALBUM_y_REGISTRO*/
+.album-form {
+    font-size: 14px;
+	float:bottom;
+	z-index: 3;
+	background: #FFFFFF;
+    width:420px;
+	position:relative;
+	margin: 0 auto;
+	margin-top:2.5%;
+	padding: 0.5em;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.albumForm picture{
+	size: 20em;
+}
+.albumForm legend{
+	font-weight:bold;
+   	background:radial-gradient(#F8E177, #A08940);
+    color:#4F4F4F;
+    padding: 1em;
+    font-size:90%;
+    text-align:left;
+}
+.labelForm{
+    font-weight: bold;
+    line-height: normal;
+    text-align: right;
+    margin-right: 10px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 150px;
+    padding:1em;
+}
+.formInput{
+    min-width: 200px;
+	background: #CACACA;
+	color:#A08940;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 1em;
+	box-sizing: border-box;
+	float:left;
+    display:block;
+}
+.formInputColor{
+    height: 45px;
+    min-width: 200px;
+	border: 0;
+	margin: 0 0 15px;
+	box-sizing: border-box;
+	float:left;
+    display:block;
+}
+
+.bus-form button:hover,.form button:active,.form button:focus {
+	background: #43A047;
+}
+.formSubmit{
+    font-weight:bold;
+	background:radial-gradient(#F8E177, #A08940);
+	margin:0 auto;
+	margin-top:2%;
+	color:#4F4F4F;
+    border:0;
+    min-width: 400px;
+    padding: 1em;
+}
+.formSubmit:hover{
+	background:radial-gradient(#A08940, #F8E177);
+}
+
+.formFile{
+    background: #CACACA;
+ 
+    padding:  .5em .3em;
+    min-width: 200px;
+}
+
+
+
+
+
+
+
+
+
+/*iniciar sesion*/
+.boton-ini{
+
+	background:radial-gradient(#F8E177, #A08940);
+    
+	float:left;
+	padding: .3em;
+	width:80px;
+	min-height: 50px;
+	
+	border-color: #A889BB;
+	color: #4F4F4F;
+	text-decoration:none;
+	font-size:.9em;
+}
+.boton-ini:hover{
+	background:radial-gradient(#A08940,#F8E177);
+}
+
+.ini-form {
+	display:none;
+	float:bottom;
+	z-index: 3;
+	background: #FFFFFF;
+	max-width: 360px;
+	position:relative;
+	margin: 0 auto;
+	padding: 0.8em;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.ini-form input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #C0C0C0;
+	color:#A08940;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 0.4em;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+::-webkit-input-placeholder {
+	color: #4CAF50;
+}
+.ini-form button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: radial-gradient(#F8E177, #A08940);
+	width: 100%;
+	border: 0;
+	padding: 10px;
+	color: #4F4F4F;
+	font-size: 14px;
+	cursor: pointer;
+}
+.ini-form button:hover,.form button:active,.form button:focus {
+	background:radial-gradient(#A08940,#F8E177);
+}
+.ini-form .mensaje {
+	margin: 15px 0 0;
+	color: #4F4F4F;
+	font-size: 12px;
+}
+.ini-form .mensaje a {
+	color: #393939;
+	text-decoration: none;
+}
+.ini-form .mensaje a:hover {
+	color: #A08940;
+	text-decoration: none;
+}
+.boton-ini:hover .ini-form{
+	display:block;
+}
+.boton-ini:hover {
+	display:block;
+	width:200px;
+	padding: 0.4em 0em 0.4em 0em;
+	z-index:5;
+    background:radial-gradient(#A08940,#F8E177);
+}
+
+/*buscador*/
+.bus-form {
+	float:bottom;
+	z-index: 3;
+	background: #FFFFFF;
+	max-width: 360px;
+	position:relative;
+	margin: 0 auto;
+	margin-top:2.5%;
+	padding: 0.3em;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.bus-form input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #C0C0C0;
+	color:#A08940;
+	width: 66%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 1em;
+	box-sizing: border-box;
+	font-size: 14px;
+	float:left;
+	margin-top:1px;
+}
+.bus-form button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: radial-gradient(#F8E177, #A08940);
+	width: 30%;
+	border: 0;
+	padding: 15px 5px;
+	color: #4F4F4F;
+	font-size: 14px;
+	cursor: pointer;
+}
+.bus-form button:hover,.form button:active,.form button:focus {
+	background: radial-gradient(#A08940, #F8E177);
+}
+/*buscador avanzado*/
+.bus-form-a {
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	float:bottom;
+	z-index: 3;
+	background: #FFFFFF;
+	max-width: 500px;
+	height:auto;
+	position:relative;
+	margin: 0 auto;
+	margin-top:2.5%;
+	padding: 0.3em;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.bus-form-a fieldset {
+	width:100%;
+	border:0px;
+}
+.bus-form-a label {
+    line-height: normal;
+	text-align:left;
+    position: relative;
+    display: block;
+    float: left;
+    padding:0.8em;
+}
+
+.bus-form-a input {
+	outline: 0;
+	background: #CACACA;
+	color:#A08940;
+	border: 0;
+	margin: 0 15px 0 5px;
+	padding: 1em;
+	box-sizing: border-box;
+	font-size: 14px;
+	float:left;
+	margin-top:1px;
+}
+.bus-form-a button {
+	text-transform: uppercase;
+	outline: 0;
+	background: radial-gradient(#F8E177, #A08940);
+	width: 30%;
+	border: 0;
+	padding: 15px 5px;
+	color: #4F4F4F;
+	font-size: 14px;
+	cursor: pointer;
+}
+.bus-form-a button:hover,.form button:active,.form button:focus {
+	background: radial-gradient(#A08940,#F8E177);
+}
+/*Confirmar*/
+.confirmar-form{
+	height:100%;
+	padding:20px;
+	
+	margin:0 auto;
+}
+
+/*Confirmar*/
+.detalle{
+	font-size:2em;
+	text-align:center;
+	
+	width:100%;
+	height:auto;
+}
+.detalle figure img{
+	width:60%;
+}
+.detalle p{
+	text-align:center;
+}
+
+
+
+
+/*resto*/
+.logo{ 
+   position:absolute;
+   width:20%;
+   float:left;
+}
+
+
+.boton-menu2{
+    
+    background:radial-gradient(#F8E177, #A08940);
+    
+	float:left;
+	padding: .3em;
+	width:80px;
+	min-height: 50px;
+	
+	border-color: #A889BB;
+	color: #4F4F4F;
+	text-decoration:none;
+	font-size:.9em;
+
+}
+.boton-menu2:hover{
+     background:radial-gradient(#A08940,#F8E177);
+}
+.li2{
+	width:100px;
+	margin:1% 1% 1% 1%;
+}
+.li-logo{
+	width:110px;
+	margin:3% 0% 0% 225px;
+
+   vertical-align: middle;
+}
+
+
+/*ids*/
+#logo-U{
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-left:-20px;
+	position:relative;
+	float:left;
+    border-top-color:#A08940;
+    border-left-color:black;
+    border-right-color:black;
+    border-bottom-color:#A08940;
+    border-width:10px;
+    border-style: solid;
+    animation: giroLogo 20s linear infinite;
+}
+
+
+/*animaciones*/
+@keyframes giroLogo{
+    from{ transform: rotate(0deg)}
+    to{transform:rotate(360deg)}
+}

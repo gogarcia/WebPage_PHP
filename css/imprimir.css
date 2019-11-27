@@ -1,0 +1,60 @@
+header{
+    display: none;
+}
+.bus-form{
+    display:none;
+}
+.buscadorLink{
+    
+}
+body { 
+    color: #000; 
+    font: 12px serif;
+}
+img{
+    max-width: 500px;
+    min-width: 500px;
+    min-height: 350px;
+    max-height: 350px;
+}
+.fotoLink{
+    text-decoration: underline;
+}
+footer{
+    display: none;
+}
+#buscarAvanzada{
+    display: none;
+}
+article{
+    border: 0;
+}
+hr{
+    display:none;
+}
+.botonOcultable{
+    display:none;
+}
+
+.formFile{
+    display:none;
+}
+.formSubmit{
+    display: none;
+}
+#fotoReg{
+    display: none;
+}
+.album-form{
+    max-width: 310px;
+}
+a{
+    text-decoration: underline;
+    text-decoration: underline;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: violet;
+}
